@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=cover, initial-scale=1.0">
+    <title>Request for Blood</title>
+    <link rel="stylesheet" href="Request_for_blood.css">
+</head>
+
+<body>
+
+    <!------ navication section ----->
+
+    <div class="logo">
+        <img class="logo-img" src="Life Care Logo PNG.png" alt="" width="220px" height="110px" type="logo">
+
+        <div class="login">
+            <ul>
+                <li style="background-color: indigo; color: #fff;"><a href="First_register.html"><b>REGISTER</b></a></li>
+                <li><a href="new-loginPage.html" style="color: #000;"><b>LOGIN</b></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="nav1">
+        <nav>
+            <ul class="hmcls">
+                <li><a href="LifeCare.html">HOME</a></li>
+                <li><a href="#">BLOOD BANK</a></li>
+                <!-- <li><a href="#">CAUSES</a></li> -->
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="Contact-Us.html">CONTACT US</a></li>
+                <li><a href="#">MORE <i class="fa fa-chevron-down" aria-hidden="true" style="font-size: .8em;"></i></a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="Request_for_blood.html">Request Blood</a></li>
+                            <li><a href="Donate-us.html">Donations</a></li>
+                            <li><a href="About_Us.html">About Us</a></li>
+                            <li><a href="RegisterPage.html">Registration</a></li>
+                        </ul>
+                    </div>
+                <li class="donate" style="float: right; padding-right: 60px; margin-right: 20px; border-radius: 3px;"><a
+                        class="donates" href="Donate-us.html"><b>DONATE
+                            US</b></a></li>
+
+                </li>
+                <!-- <li><a href="#">Login</a></li> -->
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+
+    <!------ Request Section------>
+
+    <div class="request">
+        <h1>Request for blood</h1>
+        <div class="optn">
+            <table>
+                <form action="">
+
+                    <tr>
+                        <td colspan="3">
+                            <h2>Patient Details</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Patient Name :
+                            <input class="inptbx" type="text" name="pname" placeholder="Patient Name" required>
+                        </td>
+
+                        <td>
+                            Doctor Name :
+                            <input class="inptbx" type="text" name="dname" placeholder="Doctor Name" required>
+                        </td>
+
+                        <td>
+                            Blood Group :
+                            <Select name="blood-group" required style=" font-size: 20px; padding: 6px 30px; border: none;">
+                                <option value="select-blood">    -- Select Blood --     </option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </Select>
+                        </td>
+                    </tr> 
+
+                    <tr>
+                        <td>State :
+                            <input class="inptbx" name="state" type="text" placeholder="State" required>
+                        </td>
+
+                        <td>Dist. :
+                            <input class="inptbx" name="dist" type="text" placeholder="District" required>
+                        </td>
+
+                        <td>Tehasil/Block :
+                            <input class="inptbx" name="block" type="text" placeholder="Block" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td colspan="3">Hospital Name & Address :
+                            <textarea class="txtarea" name="hospital-dtls" id="" cols="50" rows="5"
+                                placeholder="Hospital Name & Address" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <h2>Contact Details</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Date When Need :
+                            <input class="inptbox" type="date" name="ndate" required>
+                        </td>
+
+                        <td>
+                            Priorty :
+                            <input type="radio" value="normal" name="priorty" required> Normal
+                            <input type="radio" value="early" name="priorty" required> Early
+                        </td>
+
+                        <td>
+                            Mobile No. :
+                            <input class="inptbx" type="tel" name="mobile" placeholder="Mobile No." required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Email :
+                            <input class="inptbx" type="email" name="email" placeholder="Email">
+                        </td>
+
+                        <td></td>
+
+                        <td colspan="2">
+                            Other Message :
+                            <textarea class="txtarea"  name="msg" id="" cols="27" rows="4" placeholder="Other Message"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <input class="sbtn" type="submit" value="SUBMIT" name="submit">
+                        </td>
+                    </tr>
+
+                </form>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

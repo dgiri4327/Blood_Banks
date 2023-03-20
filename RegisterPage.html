@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="Life Care icon PNG.png">
+    <title>Register</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(51, 53, 54);
+        }
+
+        table {
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin: 0 0 20px 0;
+            padding: 10px 0 10px 0;
+            /* word-spacing: 15px; */
+            color: #fff;
+            font-family: Georgia, serif;
+            text-align: center;
+            border: 1px solid rgb(0, 0, 0);
+            /* border-radius: 40px; */
+            background-color: #03e9f4;
+            box-shadow: 0 0 25px 0 rgba(74, 74, 74);
+        }
+
+        .table {
+            font-size: 23px;
+            color: #03e9f4;
+            /* float: left; */
+        }
+
+        input {
+            border: none;
+            outline: none;
+            background: none;
+            border-bottom: 1px solid #3bd9d9;
+            color: #fff;
+            font-size: 20px;
+            /* width: 220px; */
+            padding: 7px 25px 7px 25px;
+        }
+
+        .Genger{
+            word-spacing: 8px;
+        }
+
+        .Genger input{
+            width:10px;
+            padding-right: 15px;
+            /* font-size: 10px; */
+        }
+
+        tr td {
+            margin-bottom: 20px;
+
+        }
+
+        .table button {
+            float: left;
+            background: transparent;
+            color: #3bd9d9;
+            font-weight: 400;
+            font-size: 24px;
+            text-transform: uppercase;
+            padding: 16px 36px;
+            margin-bottom: 12px;
+            border: 2px solid #3bd9d9;
+            border-radius: 32px;
+            transform: translate(0);
+            overflow: hidden;
+            cursor: pointer;
+            background: #03e9f4;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+        }
+
+        .table button::before {
+            content: "";
+            position: absolute;
+            background: #ffffff;
+            width: 8px;
+            top: 0;
+            bottom: 0;
+            left: -32px;
+            transform: rotate(-16deg);
+            filter: blur(6px);
+        }
+
+        .table button:hover::before {
+            left: calc(100% + 32px);
+            transition: 0.75s;
+        }
+        button{
+
+        }
+        .rgstr button{
+            margin-left: 840px;
+        }
+        .reset{
+            border: 1px solid #bbb;
+            background-color: #bbb;
+            color: #000;
+            border-radius: 5px;
+            
+            padding: ;
+            margin-left: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table">
+        <h1>REGISTER</h1>
+        <table border="0" width="600" height="50" align="center" bordercolor="black">
+            <form>
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">Full Name :
+                        <input type="text" class="name" placeholder="Full Name" required>
+                    </td>
+                    <td></td>
+
+                    <td class="last-clm" style="float: right; margin-right: 186px;">Email ID :
+                        <input type="email" class="Email" placeholder="Email Address" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="margin-left: 150px; float: left;">
+                        Date of Birth : 
+                        <input type="Date">
+                    </td>
+                    <td></td>
+                    <td colspan="3" class="last-clm" style="float: right; margin-right: 160px;">Mobile NO. :
+                        <input type="number" class="mob" placeholder="Mobile Number" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">Create Password :
+                        <input type="password" class="pswd" placeholder="Password" required>
+                    </td>
+                    <td></td>
+                    <td class="last-clm" style="float: right; margin-right: 99px;">Confirm Password :
+                        <input type="password" class="Cnfpswd" placeholder="Confirm Password" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">Blood Group :
+                        
+                        <select name="" id="" style="padding: 10px 70px 10px 70px; font-size:18px " placeholder="Select">
+                            <option value="Select">Select</option>
+                            <option value="A+">A+</option>
+                            <option value="B+">B+</option>
+                            <option value="AB+">AB+</option>
+                            <option value="O+">O+</option>
+                            <option value="A-">A-</option>
+                            <option value="B-">B-</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </td>
+                    <td></td>
+                    <td class="Genger" style="float: right; margin-right: 215px;">Gender :
+        
+                        <input type="radio" name="gender" value="Male" class="gender"><label for="radio-1"> Male </label> 
+                        <input type="radio" name="gender" value="Female" class="gender"><label for="radio-2"> Female </label>
+                        <input type="radio" name="gender" value="other" class="gender"><label for="radio-3"></label> Other </label>
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">Weight :
+                        <input type="number" placeholder="Weight">
+                    </td>
+                    <td></td>
+                    <td class="last-clm" style="float: right; margin-right: 80px;">Last Donation Date(optional) :
+                        <input type="date" placeholder="Last Donation Date">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">Mobile No. :
+                        <input type="number" placeholder="Mobile no." required>
+                    </td>
+                    <td></td>
+                    <td class="last-clm" style="float: right; margin-right: 148px;">Pin/Zip Code :
+                        <input type="number" placeholder="Pin No." required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">State :
+                        <input type="text" placeholder="State" required>
+                    </td>
+                    <td></td>
+                    <td class="last-clm" style="float: right; margin-right: 227px;">Dist. :
+                        <input type="text" placeholder="District" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">Tehasil/Block :
+                        <input type="text" placeholder="Block" required>
+                    </td>
+                    <td></td>
+                    <td class="last-clm" style="float: right; margin-right: 135px;">City or Village :
+                        <input type="text" placeholder="city/Village" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">
+                        Aadhar Card :
+                        <input type="file" required>
+                    </td>
+                    <td></td>
+                    <td class="last-clm" style="float: right; margin-right: 80px;">
+                        Photo :
+                        <input type="file" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="margin-left:150px; float: left; margin-top: 15px;">
+                        <input type="checkbox" name="confirmation" required> I Accept <a href="" class="link"
+                            style="text-decoration: none; text-decoration-line: none; color: #fff;">Term
+                        </a> & <a href="" class="link"
+                            style="text-decoration: none; text-decoration-line: none; color: #fff;">Condition</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="rgstr">
+                        <button><b>Register</b></button>
+                    </td>
+                    <td>
+                        <input type="Reset" value="Reset" class="reset">
+                    </td>
+                </tr>
+
+            </form>
+        </table>
+    </div>
+</body>
+
+</html>
